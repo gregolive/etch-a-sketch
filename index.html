@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="settings">
+        <h1>etch-a-sketch <i>ONLINE</i></h1>
+        <p>Fantastic pictures at the twiddle of the mouse!</p>
+        <h2>Input Mode</h2>
+        <button class="sidebar-button active-button" id="grayscale">Grayscale</button>
+        <button class="sidebar-button inactive-button" id="psychadelic">Psychedelic</button>
+        <div class="custom-color">
+            <button class="sidebar-button inactive-button" id="custom">Custom</button>
+            <input type="color" class="color-picker" value="#d00000">
+        </div>
+        <h2>Grid Density</h2>
+        <input type="range" min="1" max="50" value="25" class="slider" id="myRange">
+        <a href="https://github.com/gregolive" target="_blank" class="footer">
+            <img src="./img/github.png">
+            <span>gregolive</span>
+        </a>
+    </div>
+    <div class="handheld">
+        <h3>Etch A Sketch</h3>
+
+        <div class="screen">
+            <div class="grid"></div>
+        </div>
+
+        <div class="bottom">
+            <div class="dials">
+                <div class="dial-inner"></div>
+            </div>
+            <div class="console-button">
+                <button class="shake">Clear</button>
+            </div>
+
+            <div class="dials">
+                <div class="dial-inner"></div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
